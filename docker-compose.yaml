@@ -11,7 +11,7 @@ services:
       - 443:443
     volumes:
       - ./config:/config
-      - /usr/share/nginx/html:/html
+      - ./html:/usr/share/nginx/html
       - /etc/letsencrypt:/etc/letsencrypt:ro
       - /tmp/acme_challenge:/tmp/acme_challenge
     networks:
